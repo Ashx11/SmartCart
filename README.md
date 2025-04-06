@@ -68,6 +68,18 @@ All generated outputs will be saved in the `outputs/` folder:
 
 ---
 
+## 🧪 Evaluation Notes
+
+This project evaluates the recommender system using:
+
+- **Mean Average Precision (MAP@K)** – A measure of ranking quality over the top K recommendations.
+- **@K** refers to evaluating the top K recommended items (e.g., @5 means top 5 items).
+- Due to data sparsity, traditional Precision@K was replaced with MAP for better evaluation insight.
+
+> The dataset contains 50 users, 100 products, and 724 total ratings, resulting in a sparse matrix. As such, evaluation was done using a manually constructed test set by removing high-rated items and checking if they were successfully recommended back.
+
+---
+
 ## 📄 Report
 
 Read `report.pdf` for:
